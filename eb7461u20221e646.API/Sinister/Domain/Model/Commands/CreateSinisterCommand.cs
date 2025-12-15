@@ -1,3 +1,5 @@
-﻿namespace eb7461u20221e646.API.Sinister.Domain.Model.Commands;
+﻿using eb7461u20221e646.API.Sinister.Domain.Model.ValueObjects;
 
-public record CreateSinisterCommand();
+namespace eb7461u20221e646.API.Sinister.Domain.Model.Commands;
+
+public record CreateSinisterCommand(int CustomerId, int InsuranceId, ESinisterType SinisterType) ;

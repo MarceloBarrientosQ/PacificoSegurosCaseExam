@@ -2,7 +2,7 @@
 
 namespace eb7461u20221e646.API.Sinister.Domain.Services;
 
-public interface ISinisterQueryServices
+public interface ISinisterQueryService
 {
     public Task<Model.Aggregate.Sinister> Handle(GetSinisterById query);
 }

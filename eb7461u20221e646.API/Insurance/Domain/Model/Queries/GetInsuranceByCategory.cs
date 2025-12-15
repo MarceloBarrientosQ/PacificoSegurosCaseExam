@@ -1,3 +1,5 @@
-﻿namespace eb7461u20221e646.API.Insurance.Domain.Model.Queries;
+﻿using eb7461u20221e646.API.Insurance.Domain.Model.ValueObjects;
 
-public record GetInsuranceByCategory();
+namespace eb7461u20221e646.API.Insurance.Domain.Model.Queries;
+
+public record GetInsuranceByCategory(string Category);

@@ -1,3 +1,5 @@
-﻿namespace eb7461u20221e646.API.Insurance.Domain.Model.Commands;
+﻿using eb7461u20221e646.API.Insurance.Domain.Model.ValueObjects;
 
-public record CreateInsuranceCommand();
+namespace eb7461u20221e646.API.Insurance.Domain.Model.Commands;
+
+public record CreateInsuranceCommand(string Name, string Category, string Subcategory);

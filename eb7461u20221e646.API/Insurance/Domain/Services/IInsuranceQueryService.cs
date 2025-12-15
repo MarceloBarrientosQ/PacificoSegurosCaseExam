@@ -2,7 +2,7 @@
 using eb7461u20221e646.API.Insurance.Domain.Model.Aggregate;
 using eb7461u20221e646.API.Insurance.Domain.Model.Queries;
 
-public interface IInsuraceQueryService
+public interface IInsuranceQueryService
 {
     // <summary>
     // Handles the GetAllInsurances query to retrieve all insurances.
@@ -18,7 +18,7 @@ public interface IInsuraceQueryService
     // </summary>
     // <param name="query">The query containing the identifier of the insurance to retrieve.</
     // <returns>A task that represents the asynchronous operation. The task result contains the insurance with the specified identifier.</returns>
-    // public Task<Insurance> Handle(GetInsuraceById query); 
+    public Task<Insurance> Handle(GetInsuranceById query); 
     
     
     // <summary>
@@ -28,4 +28,5 @@ public interface IInsuraceQueryService
     // <returns>A task that represents the asynchronous operation. The task result contains an enumerable of insurances matching the specified category.</returns>
     
     public Task<IEnumerable<Insurance>> Handle(GetInsuranceByCategory query);
+    
 }

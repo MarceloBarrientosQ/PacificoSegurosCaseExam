@@ -1,6 +1,8 @@
-﻿namespace eb7461u20221e646.API.Shared.Domain.Model.Events;
+﻿using Cortex.Mediator.Notifications;
 
-public interface IEvent
+namespace eb7461u20221e646.API.Shared.Domain.Model.Events;
+
+public interface IEvent : INotification
 {
     
 }

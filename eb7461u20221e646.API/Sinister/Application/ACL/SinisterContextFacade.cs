@@ -3,7 +3,7 @@ using eb7461u20221e646.API.Sinister.Domain.Model.ValueObjects;
 using eb7461u20221e646.API.Sinister.Domain.Services;
 using eb7461u20221e646.API.Sinister.Interfaces.ACL;
 
-namespace eb7461u20221e646.API.Sinister.Aplication.ACL;
+namespace eb7461u20221e646.API.Sinister.Application.ACL;
 
 public class SinisterContextFacade(ISinisterCommandService sinisterCommandService,
                                  ISinisterQueryService sinisterQueryService) : ISinisterContextFacade
@@ -18,12 +18,4 @@ public class SinisterContextFacade(ISinisterCommandService sinisterCommandServic
         
         return sinister.SinisterId;
     }
-
-    public async Task<int> GetSinisterCountByCustomer(int customerId)
-    {
-        return await sinisterQueryService.Handle(
-            new GetSinisterCountByCustomerQuery(customerId)
-        );
-    }
-    
 }
